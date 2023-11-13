@@ -10,7 +10,11 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringBasicoApplication {
 	@Autowired
-	Oi oi;
+	Oi oiPortugues;
+	@Autowired
+	Oi oiIngles;
+	@Autowired
+	Oi oiEspanhol;
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBasicoApplication.class, args);
 
@@ -19,7 +23,9 @@ public class SpringBasicoApplication {
 	@Bean
 	CommandLineRunner initOi(){
 		return args -> {
-			System.out.println(oi.oi());
+			System.out.println(oiPortugues.oi());
+			System.out.println(oiIngles.oi());
+			System.out.println(oiEspanhol.oi());
 		};
 	}
 
