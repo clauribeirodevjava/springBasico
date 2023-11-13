@@ -8,7 +8,7 @@ O spring é de código aberto. Possui uma comunidade grande e ativa que fornece 
 
 
 O que queremos dizer com "Spring"
-O termo "Spring" significa coisas diferentes em contextos diferentes. Pode ser usado para se referir ao próprio projeto Spring Framework, que foi onde tudo começou. Com o tempo, outros projetos Spring foram construídos com base no Spring Framework. Na maioria das vezes, quando as pessoas dizem “Primavera”, elas se referem a toda a família de projetos. Esta documentação de referência concentra-se na base: o próprio Spring Framework.
+O termo "Spring" significa coisas diferentes em contextos diferentes. Pode ser usado para se referir ao próprio projeto Spring Framework, que foi onde tudo começou. Com o tempo, outros projetos Spring foram construídos com base no Spring Framework. Na maioria das vezes, quando as pessoas dizem “Spring”, elas se referem a toda a família de projetos. Esta documentação de referência concentra-se na base: o próprio Spring Framework.
 
 O Spring Framework é dividido em módulos. Os aplicativos podem escolher quais módulos precisam. No centro estão os módulos do contêiner principal, incluindo um modelo de configuração e um mecanismo de injeção de dependência. Além disso, o Spring Framework fornece suporte fundamental para diferentes arquiteturas de aplicativos, incluindo mensagens, dados transacionais e persistência, e web. Também inclui o framework web Spring MVC baseado em servlet e, em paralelo, o framework web reativo Spring WebFlux.
 
@@ -43,29 +43,30 @@ A partir do Spring Framework 6.0, o Spring foi atualizado para o nível Jakarta 
 
 Com o tempo, a função do Java/Jakarta EE no desenvolvimento de aplicativos evoluiu. Nos primórdios do J2EE e do Spring, os aplicativos foram criados para serem implementados em um servidor de aplicativos. Hoje, com a ajuda do Spring Boot, os aplicativos são criados de maneira amigável ao Devops e à nuvem, com o contêiner Servlet incorporado e fácil de alterar. A partir do Spring Framework 5, um aplicativo WebFlux nem mesmo usa a API do Servlet diretamente e pode ser executado em servidores (como o Netty) que não são contêineres de Servlet.
 
-A Primavera continua a inovar e a evoluir. Além do Spring Framework, existem outros projetos, como Spring Boot, Spring Security, Spring Data, Spring Cloud, Spring Batch, entre outros. É importante lembrar que cada projeto tem seu próprio repositório de código-fonte, rastreador de problemas e cadência de lançamento. Consulte spring.io/projects para a lista completa de projetos Spring.
+O Spring continua a inovar e a evoluir. Além do Spring Framework, existem outros projetos, como Spring Boot, Spring Security, Spring Data, Spring Cloud, Spring Batch, entre outros. É importante lembrar que cada projeto tem seu próprio repositório de código-fonte, rastreador de problemas e cadência de lançamento. Consulte spring.io/projects para a lista completa de projetos Spring.
 
-Design Philosophy
-When you learn about a framework, it’s important to know not only what it does but what principles it follows. Here are the guiding principles of the Spring Framework:
+Filosofia de design
+Quando você aprende sobre uma estrutura, é importante saber não apenas o que ela faz, mas também quais princípios ela segue. Aqui estão os princípios orientadores do Spring Framework:
 
-Provide choice at every level. Spring lets you defer design decisions as late as possible. For example, you can switch persistence providers through configuration without changing your code. The same is true for many other infrastructure concerns and integration with third-party APIs.
+Fornece escolha em todos os níveis. Spring permite adiar decisões de design o mais tarde possível. Por exemplo, você pode alternar provedores de persistência por meio da configuração sem alterar seu código. O mesmo se aplica a muitas outras preocupações de infraestrutura e integração com APIs de terceiros.
 
-Accommodate diverse perspectives. Spring embraces flexibility and is not opinionated about how things should be done. It supports a wide range of application needs with different perspectives.
+Acomode diversas perspectivas. Spring abraça a flexibilidade e não tem opinião opinativa sobre como as coisas devem ser feitas. Ele oferece suporte a uma ampla gama de necessidades de aplicação com diferentes perspectivas.
 
-Maintain strong backward compatibility. Spring’s evolution has been carefully managed to force few breaking changes between versions. Spring supports a carefully chosen range of JDK versions and third-party libraries to facilitate maintenance of applications and libraries that depend on Spring.
+Mantenha forte compatibilidade com versões anteriores. A evolução do Spring foi cuidadosamente gerenciada para forçar poucas mudanças significativas entre as versões. Spring oferece suporte a uma variedade cuidadosamente escolhida de versões JDK e bibliotecas de terceiros para facilitar a manutenção de aplicativos e bibliotecas que dependem do Spring.
 
-Care about API design. The Spring team puts a lot of thought and time into making APIs that are intuitive and that hold up across many versions and many years.
+Preocupe-se com o design da API. A equipe do Spring dedica muito tempo e reflexão para criar APIs que sejam intuitivas e que funcionem em muitas versões e por muitos anos.
 
-Set high standards for code quality. The Spring Framework puts a strong emphasis on meaningful, current, and accurate javadoc. It is one of very few projects that can claim clean code structure with no circular dependencies between packages.
+Estabeleça padrões elevados de qualidade de código. O Spring Framework coloca forte ênfase em javadoc significativo, atual e preciso. É um dos poucos projetos que pode reivindicar uma estrutura de código limpa, sem dependências circulares entre pacotes.
 
-Feedback and Contributions
-For how-to questions or diagnosing or debugging issues, we suggest using Stack Overflow. Click here for a list of the suggested tags to use on Stack Overflow. If you’re fairly certain that there is a problem in the Spring Framework or would like to suggest a feature, please use the GitHub Issues.
+Feedback e Contribuições
+Para perguntas sobre como fazer ou diagnóstico ou depuração de problemas, sugerimos o uso do Stack Overflow. Clique aqui para obter uma lista de tags sugeridas para usar no Stack Overflow. Se você tiver certeza de que há um problema no Spring Framework ou quiser sugerir um recurso, use o GitHub Issues.
 
-If you have a solution in mind or a suggested fix, you can submit a pull request on Github. However, please keep in mind that, for all but the most trivial issues, we expect a ticket to be filed in the issue tracker, where discussions take place and leave a record for future reference.
+Se você tiver uma solução em mente ou uma sugestão de correção, poderá enviar uma solicitação pull no Github. No entanto, tenha em mente que, para todos os problemas, exceto os mais triviais, esperamos que um ticket seja preenchido no rastreador de problemas, onde ocorrem as discussões e deixe um registro para referência futura.
 
-For more details see the guidelines at the CONTRIBUTING, top-level project page.
+Para obter mais detalhes, consulte as diretrizes na página CONTRIBUINDO do projeto de nível superior.
 
-Getting Started
-If you are just getting started with Spring, you may want to begin using the Spring Framework by creating a Spring Boot-based application. Spring Boot provides a quick (and opinionated) way to create a production-ready Spring-based application. It is based on the Spring Framework, favors convention over configuration, and is designed to get you up and running as quickly as possible.
+Começando
+Se você está apenas começando com o Spring, você pode querer começar a usar o Spring Framework criando um aplicativo baseado em Spring Boot. Spring Boot fornece uma maneira rápida (e opinativa) de criar um aplicativo baseado em Spring pronto para produção. Ele é baseado no Spring Framework, favorece a convenção em vez da configuração e foi projetado para colocá-lo em funcionamento o mais rápido possível.
 
-You can use start.spring.io to generate a basic project or follow one of the "Getting Started" guides, such as Getting Started Building a RESTful Web Service. As well as being easier to digest, these guides are very task focused, and most of them are based on Spring Boot. They also cover other projects from the Spring portfolio that you might want to consider when solving a particular problem.
+Você pode usar start.spring.io para gerar um projeto básico ou seguir um dos guias de "Introdução", como Introdução à criação de um serviço Web RESTful. Além de serem mais fáceis de digerir, esses guias são muito focados nas tarefas e a maioria deles é baseada no Spring Boot. Eles também cobrem outros projetos do portfólio Spring que você pode considerar ao resolver um problema específico.
+
