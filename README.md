@@ -7,7 +7,7 @@ Spring oferece suporte a uma ampla variedade de cenários de aplicativos. Em uma
 O spring é de código aberto. Possui uma comunidade grande e ativa que fornece feedback contínuo com base em uma ampla gama de casos de uso do mundo real. Isso ajudou o Spring a evoluir com sucesso ao longo de muito tempo
 
 
-O que queremos dizer com "Primavera"
+O que queremos dizer com "Spring"
 O termo "Primavera" significa coisas diferentes em contextos diferentes. Pode ser usado para se referir ao próprio projeto Spring Framework, que foi onde tudo começou. Com o tempo, outros projetos Spring foram construídos com base no Spring Framework. Na maioria das vezes, quando as pessoas dizem “Primavera”, elas se referem a toda a família de projetos. Esta documentação de referência concentra-se na base: o próprio Spring Framework.
 
 O Spring Framework é dividido em módulos. Os aplicativos podem escolher quais módulos precisam. No centro estão os módulos do contêiner principal, incluindo um modelo de configuração e um mecanismo de injeção de dependência. Além disso, o Spring Framework fornece suporte fundamental para diferentes arquiteturas de aplicativos, incluindo mensagens, dados transacionais e persistência, e web. Também inclui o framework web Spring MVC baseado em servlet e, em paralelo, o framework web reativo Spring WebFlux.
