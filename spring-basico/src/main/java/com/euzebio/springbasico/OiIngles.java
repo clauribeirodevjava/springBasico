@@ -1,8 +1,10 @@
 package com.euzebio.springbasico;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("helloEnglish")
+@Primary
 public class OiIngles implements Oi {
 
     @Override

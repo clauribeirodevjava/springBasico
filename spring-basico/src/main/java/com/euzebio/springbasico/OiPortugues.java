@@ -2,7 +2,7 @@ package com.euzebio.springbasico;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("helloPortuguese")
 public class OiPortugues implements Oi{
 
     @Override
