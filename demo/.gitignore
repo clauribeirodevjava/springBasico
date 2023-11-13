@@ -1,0 +1,24 @@
+# Arquivos compilados
+*.class
+
+# Arquivos de construção do Maven
+target/
+
+# Arquivos de construção do Gradle
+build/
+
+# Arquivos de configuração do Eclipse
+.settings/
+
+# Diretório de saída do Eclipse
+bin/
+
+# Arquivos de configuração do IntelliJ
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+
