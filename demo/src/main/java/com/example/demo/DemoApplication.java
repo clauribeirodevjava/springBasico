@@ -10,7 +10,7 @@ import com.example.demo.impl.OiPortugues;
 
 @SpringBootApplication
 public class DemoApplication {
-	Oi oi = new OiPortugues();
+	Oi oi;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
