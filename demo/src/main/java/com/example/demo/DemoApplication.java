@@ -17,7 +17,7 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner initOi(Oi oi) {
 		return args -> {
-			oi.oi();
+			System.out.println(oi.oi());
 		};
 	}
 
