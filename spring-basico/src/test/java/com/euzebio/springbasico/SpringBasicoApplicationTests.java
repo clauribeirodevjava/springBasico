@@ -3,10 +3,12 @@ package com.euzebio.springbasico;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertSame;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.euzebio.patterns.builder.Produto;
 import com.euzebio.patterns.prototype.MinhaClasse;
 import com.euzebio.patterns.singleton.Singleton;
 
@@ -42,6 +44,25 @@ class SpringBasicoApplicationTests {
 
 		// Testa se as modificações afetam apenas o objeto original
 		assertNotEquals(original.getMensagem(), clone.getMensagem());
+	}
+
+	@Test
+	void testConstrucaoProduto() {
+		Produto produto = new Produto.Builder().withParte1("Parte 1").withParte2("Parte 2").withParte3("Parte 3")
+				.build();
+
+		assertEquals("Parte 1", produto.getParte1());
+		assertEquals("Parte 2", produto.getParte2());
+		assertEquals("Parte 3", produto.getParte3());
+	}
+
+	@Test
+	void testConstrucaoProdutoSemPartesObrigatorias() {
+		// Tentar construir o produto sem todas as partes obrigatórias deve lançar uma
+		// exceção
+		assertThrows(IllegalStateException.class, () -> new Produto.Builder().withParte1("Parte 1")
+				// Não configurar Parte 2 e Parte 3
+				.build());
 	}
 
 }
