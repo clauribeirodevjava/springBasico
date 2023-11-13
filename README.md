@@ -70,5 +70,5 @@ Se você está apenas começando com o Spring, você pode querer começar a usar
 
 Você pode usar start.spring.io para gerar um projeto básico ou seguir um dos guias de "Introdução", como Introdução à criação de um serviço Web RESTful. Além de serem mais fáceis de digerir, esses guias são muito focados nas tarefas e a maioria deles é baseada no Spring Boot. Eles também cobrem outros projetos do portfólio Spring que você pode considerar ao resolver um problema específico.
 # Hello World
-[Texto do Link](README.md)
+[Texto do Link](./README.md)
 
