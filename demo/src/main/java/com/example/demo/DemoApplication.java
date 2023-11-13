@@ -1,24 +1,27 @@
-package com.euzebio.springbasico;
-
+package com.example.demo;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.example.demo.domain.Oi;
+import com.example.demo.impl.OiPortugues;
+
 @SpringBootApplication
-public class SpringBasicoApplication {
+public class DemoApplication {
+	Oi oi;
 
-	Oi oi = new OiEspanhol();
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBasicoApplication.class, args);
-
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 	@Bean
-	CommandLineRunner initOi(){
+	CommandLineRunner initOi() {
 		return args -> {
-			System.out.println(oi.oi());
+
+			System.out.print(oi.oi());
+
 		};
 	}
 
