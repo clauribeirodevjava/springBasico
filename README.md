@@ -29,7 +29,7 @@ Utilitários de simultaneidade (JSR 236)
 
 API de ligação JSON (JSR 367)
 
-Validação de feijão (JSR 303)
+Validação de bean (JSR 303)
 
 APP (JSR 338)
 
