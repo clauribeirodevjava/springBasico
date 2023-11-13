@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# Arquivos compilados
+*.class
+
+# Arquivos de construção do Maven
+target/
+
+# Arquivos de construção do Gradle
+build/
+
+# Arquivos de configuração do Eclipse
+.settings/
+
+# Diretório de saída do Eclipse
+bin/
+
+# Arquivos de configuração do IntelliJ
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+
+=======
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -31,3 +57,4 @@ build/
 
 ### VS Code ###
 .vscode/
+>>>>>>> ad04be9d1f1651c3667fa099f2f0869a46344ac9
