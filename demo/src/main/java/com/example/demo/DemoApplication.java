@@ -20,7 +20,7 @@ public class DemoApplication {
 	CommandLineRunner initOi() {
 		return args -> {
 
-			System.out.print(oi.oi());
+			System.out.println(oi.oi());
 
 		};
 	}
