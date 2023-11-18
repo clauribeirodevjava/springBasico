@@ -9,6 +9,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.euzebio.patterns.builder.Produto;
+import com.euzebio.patterns.builder.factorymethod.Cliente;
+import com.euzebio.patterns.builder.factorymethod.Fabrica;
+import com.euzebio.patterns.builder.factorymethod.FabricaConcretaA;
+import com.euzebio.patterns.builder.factorymethod.FabricaConcretaB;
 import com.euzebio.patterns.prototype.MinhaClasse;
 import com.euzebio.patterns.singleton.Singleton;
 
@@ -63,6 +67,32 @@ class SpringBasicoApplicationTests {
 		assertThrows(IllegalStateException.class, () -> new Produto.Builder().withParte1("Parte 1")
 				// Não configurar Parte 2 e Parte 3
 				.build());
+	}
+
+	@Test
+	public void testClienteComFabricaA() {
+		// Configuração do teste usando FabricaConcretaA
+		Fabrica fabricaA = new FabricaConcretaA();
+		Cliente clienteA = new Cliente(fabricaA);
+
+		// Execução do método a ser testado
+		String resultadoA = clienteA.executarOperacao();
+
+		// Verificação do resultado esperado
+		assertEquals("Operação do ProdutoConcretoA", resultadoA);
+	}
+
+	@Test
+	public void testClienteComFabricaB() {
+		// Configuração do teste usando FabricaConcretaB
+		Fabrica fabricaB = new FabricaConcretaB();
+		Cliente clienteB = new Cliente(fabricaB);
+
+		// Execução do método a ser testado
+		String resultadoB = clienteB.executarOperacao();
+
+		// Verificação do resultado esperado
+		assertEquals("Operação do ProdutoConcretoB", resultadoB);
 	}
 
 }
